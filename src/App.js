@@ -8,7 +8,13 @@ export default function App() {
   };
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", background: "#0a0a0a", color: "white" }}>
+    <div
+      style={{
+        fontFamily: "Arial, sans-serif",
+        background: "#0a0a0a",
+        color: "white",
+      }}
+    >
       <section
         style={{
           minHeight: "100vh",
@@ -35,6 +41,27 @@ export default function App() {
           >
             Choose life. Come home.
           </h1>
+
+          <div
+            style={{
+              fontSize: "20px",
+              fontWeight: "bold",
+              marginBottom: "18px",
+              textShadow: "0 4px 20px rgba(0,0,0,0.35)",
+            }}
+          >
+            Hotline:{" "}
+            <a
+              href="tel:80056778943"
+              style={{
+                color: "white",
+                textDecoration: "none",
+              }}
+            >
+              800-567-789-43
+            </a>
+          </div>
+
           <button
             onClick={scrollToForm}
             style={{
@@ -76,8 +103,18 @@ export default function App() {
             boxShadow: "0 20px 50px rgba(0,0,0,0.35)",
           }}
         >
-          <h2 style={{ fontSize: "36px", marginTop: 0, marginBottom: "12px" }}>Request Help</h2>
-          <p style={{ color: "#d1d1d1", marginTop: 0, marginBottom: "24px", lineHeight: 1.5 }}>
+          <h2 style={{ fontSize: "36px", marginTop: 0, marginBottom: "12px" }}>
+            Request Help
+          </h2>
+
+          <p
+            style={{
+              color: "#d1d1d1",
+              marginTop: 0,
+              marginBottom: "24px",
+              lineHeight: 1.5,
+            }}
+          >
             Fill this out and send it to someone you trust, or connect it to your own form service.
           </p>
 
@@ -85,18 +122,43 @@ export default function App() {
             <input
               type="text"
               placeholder="Your name"
-              style={{ padding: "16px", borderRadius: "14px", border: "1px solid #333", background: "#0f0f0f", color: "white", fontSize: "16px" }}
+              style={{
+                padding: "16px",
+                borderRadius: "14px",
+                border: "1px solid #333",
+                background: "#0f0f0f",
+                color: "white",
+                fontSize: "16px",
+              }}
             />
+
             <input
               type="email"
               placeholder="Your email"
-              style={{ padding: "16px", borderRadius: "14px", border: "1px solid #333", background: "#0f0f0f", color: "white", fontSize: "16px" }}
+              style={{
+                padding: "16px",
+                borderRadius: "14px",
+                border: "1px solid #333",
+                background: "#0f0f0f",
+                color: "white",
+                fontSize: "16px",
+              }}
             />
+
             <textarea
               placeholder="Write your request here"
               rows={6}
-              style={{ padding: "16px", borderRadius: "14px", border: "1px solid #333", background: "#0f0f0f", color: "white", fontSize: "16px", resize: "vertical" }}
+              style={{
+                padding: "16px",
+                borderRadius: "14px",
+                border: "1px solid #333",
+                background: "#0f0f0f",
+                color: "white",
+                fontSize: "16px",
+                resize: "vertical",
+              }}
             />
+
             <button
               type="submit"
               style={{
